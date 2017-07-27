@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>LocalizationExample.Mvc</AssemblyName>
+    <RootNamespace>LocalizationExample</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\LocalizationExample.Mvc.LocalizationExample.SharedMvcResources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\LocalizationExample.LocalizationExample.SharedMvcResources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\LocalizationExample.SharedMvcResources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\LocalizationExample.Mvc.SharedMvcResources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\SharedMvcResources.de-DE.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
